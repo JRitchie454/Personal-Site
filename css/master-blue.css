@@ -11,7 +11,11 @@ h1, h3 {
 }
 
 .theme-button {
-  border: 1px solid  #66BFBF;
+  border: none;
   background-color: #00e3c6;
   color:black;
+}
+
+.theme-button:hover {
+  box-shadow: 0px 0px 50px rgba(102, 191, 191, 0.9);
 }
