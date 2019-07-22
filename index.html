@@ -19,10 +19,8 @@
         }).then((r) => {
           if (r.value) {
             document.getElementById('currentCSS').href = "css/master-blue.css";
-            document.getElementsByClassName('profile-img').src = "images/github-logo-dark.png?random="+new Date().getTime();
           } else {
             document.getElementById('currentCSS').href = "css/master-red.css";
-            document.getElementsByClassName('profile-img').src = "images/github-logo-light.png?random="+new Date().getTime();
           }
         })
       }
@@ -33,7 +31,7 @@
     <button class="theme-button" onclick="selectTheme()">Theme</button>
     <table>
       <tr>
-        <td><img class="profile-img" src="images/github-logo-dark.png" alt="Github logo"></td>
+        <td><img class="profile-img" src="images/profile-img.png" alt="Profile Image"></td>
         <td>
           <h1>Jamie Ritchie</h1>
           <p><em>Apprentice Developer at <strong><a href="https://www.property-network.co.uk">Property Network</a></strong></em></p>
