@@ -1,0 +1,17 @@
+body {
+  background-color: #e0fffb;
+}
+
+hr {
+  background-color: black;
+}
+
+h1, h3 {
+  color: #66BFBF;
+}
+
+.theme-button {
+  border: 1px solid  #66BFBF;
+  background-color: #00e3c6;
+  color:black;
+}

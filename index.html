@@ -4,12 +4,36 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
+    <link id="currentCSS" rel="stylesheet" href="css/master-blue.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script type="text/javascript">
+      function selectTheme() {
+        Swal.fire({
+          title: 'Select a Theme',
+          type: 'question',
+          showCancelButton: true,
+          confirmButtonColor: '#00e3c6',
+          cancelButtonColor: '#db0000',
+          confirmButtonText: 'Blue',
+          cancelButtonText: 'Red'
+        }).then((r) => {
+          if (r.value) {
+            document.getElementById('currentCSS').href = "css/master-blue.css";
+            document.getElementsByClassName('profile-img').src = "images/github-logo-dark.png?random="+new Date().getTime();
+          } else {
+            document.getElementById('currentCSS').href = "css/master-red.css";
+            document.getElementsByClassName('profile-img').src = "images/github-logo-light.png?random="+new Date().getTime();
+          }
+        })
+      }
+    </script>
     <title>Jamie's Personal Site</title>
   </head>
   <body>
+    <button class="theme-button" onclick="selectTheme()">Theme</button>
     <table>
       <tr>
-        <td><img class="profile-img" src="images/github-logo.png" alt="Github logo"></td>
+        <td><img class="profile-img" src="images/github-logo-dark.png" alt="Github logo"></td>
         <td>
           <h1>Jamie Ritchie</h1>
           <p><em>Apprentice Developer at <strong><a href="https://www.property-network.co.uk">Property Network</a></strong></em></p>
