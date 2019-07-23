@@ -28,8 +28,7 @@ function selectTheme() {
       Light: "Light"
     }
   }).then((val) => {
-    var pageName = location.href.split("/").pop();
-    alert(pageName);
+    var pageName = location.pathname.split("/").pop();
     var prefix = "";
     if (pageName !== "index.html") {
       prefix = "../";
