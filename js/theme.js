@@ -29,6 +29,7 @@ function selectTheme() {
     }
   }).then((val) => {
     var pageName = location.href.split("/").pop();
+    alert(pageName);
     var prefix = "";
     if (pageName !== "index.html") {
       prefix = "../";
