@@ -28,21 +28,26 @@ function selectTheme() {
       Light: "Light"
     }
   }).then((val) => {
+    var pageName = location.href.split("/").pop();
+    var prefix = "";
+    if (pageName !== "index.html") {
+      prefix = "../";
+    }
     switch (val) {
       case "Ice":
-        document.getElementById('currentCSS').href = "/css/master-ice.css";
+        document.getElementById('currentCSS').href = prefix + "css/master-ice.css";
         success.fire({ title: "Ice Theme Selected!" });
         break;
       case "Fire":
-        document.getElementById('currentCSS').href = "/css/master-fire.css";
+        document.getElementById('currentCSS').href = prefix + "css/master-fire.css";
         success.fire({ title: "Fire Theme Selected!" });
         break;
       case "Dark":
-        document.getElementById('currentCSS').href = "/css/master-dark.css";
+        document.getElementById('currentCSS').href = prefix + "css/master-dark.css";
         success.fire({ title: "Dark Theme Selected!" });
         break;
       case "Light":
-        document.getElementById('currentCSS').href = "/css/master-light.css";
+        document.getElementById('currentCSS').href = prefix + "css/master-light.css";
         success.fire({ title: "Light Theme Selected!" });
         break;
       default:
