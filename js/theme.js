@@ -1,3 +1,10 @@
+/*
+ * In this script a combination of both Sweetalert and Sweetalert2 is used.
+ * This is due to limitations from both scripts.
+ * Sweetalert 1 cannot display toast-style popups that are needed to notify the user of the theme switching.
+ * Sweetalert 2 does not allow us to add extra selection buttons to the popup modal without a lot of HTML code.
+ */
+
 const success = Swal.mixin({
     type: 'success',
     position: 'top-end',
@@ -18,9 +25,6 @@ function selectTheme() {
   swal({
     title: 'Select a Theme',
     icon: 'warning',
-    showCancelButton: false,
-    showConfirmButton: false,
-    allowOutsideClick: false,
     buttons: {
       Ice: "Ice",
       Fire: "Fire",
