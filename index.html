@@ -2,14 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link id="currentCSS" rel="stylesheet" href="css/master-blue.css">
+    <link id="currentCSS" rel="stylesheet" href="css/master-dark.css">
     <link rel="stylesheet" href="css/master.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sweetalert2.js"></script>
     <script src="js/sweetalert.js"></script>
     <script src="js/theme.js"></script>
     <title>Jamie's Personal Site</title>
   </head>
   <body>
-    <button class="theme-button" onclick="selectTheme()">Theme</button>
     <table>
       <tr>
         <td><img class="profile-img" src="images/profile-img.png" alt="Profile Image"></td>
@@ -20,6 +21,15 @@
         </td>
       </tr>
     </table>
+    <hr>
+    <nav>
+      <ul class="nav-bar">
+        <li class="nav-button"><a href="#">Homepage</a></li>
+        <li class="nav-button"><a href="pages/hobbies.html">My Hobbies</a></li>
+        <li class="nav-button"><a href="pages/contact.html">Contact Me</a></li>
+        <button class="theme-button" onclick="selectTheme()">Theme</button>
+      </ul>
+    </nav>
     <hr>
     <h3>Education</h3>
     <ul>

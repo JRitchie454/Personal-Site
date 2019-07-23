@@ -1,0 +1,29 @@
+body {
+  background-color: #3f3f3f;
+  color: white;
+}
+
+hr {
+  background-color: #cf0000;
+}
+
+h1, h3 {
+  color: #cf0000;
+}
+
+.theme-button, .nav-button {
+  background-color: #cf0000;
+  color:white;
+}
+
+.theme-button:hover, .nav-button:hover {
+  box-shadow: 0 0 20px rgba(255, 15, 15, 0.9);
+}
+
+a { color: #ee4040; }
+
+a:visited { color: #ee4040; }
+
+.nav-button a {
+  color:white;
+}

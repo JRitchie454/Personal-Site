@@ -6,23 +6,47 @@ const success = Swal.mixin({
     toast: true
 });
 
+const error = Swal.mixin({
+  type: 'error',
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 1500,
+  toast: true
+});
+
 function selectTheme() {
-  Swal.fire({
+  swal({
     title: 'Select a Theme',
-    type: 'question',
-    showCancelButton: true,
-    confirmButtonColor: '#00e3c6',
-    cancelButtonColor: '#db0000',
-    confirmButtonText: 'Blue',
-    cancelButtonText: 'Red',
+    icon: 'warning',
+    showCancelButton: false,
+    showConfirmButton: false,
     allowOutsideClick: false,
-  }).then((r) => {
-    if (r.value) {
-      document.getElementById('currentCSS').href = "css/master-blue.css";
-      success.fire({ title: "Blue Theme Selected!" });
-    } else {
-      document.getElementById('currentCSS').href = "css/master-red.css";
-      success.fire({ title: "Red Theme Selected!" });
+    buttons: {
+      Ice: "Ice",
+      Fire: "Fire",
+      Dark: "Dark",
+      Light: "Light"
+    }
+  }).then((val) => {
+    switch (val) {
+      case "Ice":
+        document.getElementById('currentCSS').href = "/css/master-ice.css";
+        success.fire({ title: "Ice Theme Selected!" });
+        break;
+      case "Fire":
+        document.getElementById('currentCSS').href = "/css/master-fire.css";
+        success.fire({ title: "Fire Theme Selected!" });
+        break;
+      case "Dark":
+        document.getElementById('currentCSS').href = "/css/master-dark.css";
+        success.fire({ title: "Dark Theme Selected!" });
+        break;
+      case "Light":
+        document.getElementById('currentCSS').href = "/css/master-light.css";
+        success.fire({ title: "Light Theme Selected!" });
+        break;
+      default:
+        error.fire({ title: "Theme not switched" });
     }
   });
 }

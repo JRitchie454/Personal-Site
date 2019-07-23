@@ -14,7 +14,6 @@ hr {
 
 .profile-img {
   height: 150px;
-  border-radius: 0%;
   padding-right: 10px;
 }
 
@@ -24,5 +23,36 @@ hr {
   height: 40px;
   font-size: 20px;
   float: right;
-  margin-top: 2%;
+  border: none;
 }
+
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-button {
+  border-radius: 5%;
+  height: 40px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.nav-button a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* This should be the only time that colours are defined in this file */
+.swal-footer { text-align: center; }
+.swal-button { width: 100px; }
+.swal-button--Ice { background-color: #79bcfd !important; color:black; }
+.swal-button--Ice:hover { box-shadow: 0 0 20px rgba(153, 205, 255, 1); }
+.swal-button--Fire { background-color: #ff6c00 !important; color:white; }
+.swal-button--Fire:hover { box-shadow: 0 0 20px rgba(255, 108, 0, 1); }
+.swal-button--Dark { background-color: #cf0000 !important; color:white; }
+.swal-button--Dark:hover { box-shadow: 0 0 20px rgba(255, 15, 15, 0.9); }
+.swal-button--Light { background-color: #30ffff !important; color: black; }
+.swal-button--Light:hover { box-shadow: 0 0 20px rgba(48, 255, 255, 1); }
