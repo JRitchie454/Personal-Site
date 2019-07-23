@@ -1,3 +1,11 @@
+const success = Swal.mixin({
+    type: 'success',
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 1500,
+    toast: true
+});
+
 function selectTheme() {
   Swal.fire({
     title: 'Select a Theme',
@@ -18,11 +26,3 @@ function selectTheme() {
     }
   });
 }
-
-const success = Swal.mixin({
-    type: 'success',
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 1500,
-    toast: true
-});
