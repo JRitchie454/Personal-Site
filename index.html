@@ -2,29 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/master.css">
     <link id="currentCSS" rel="stylesheet" href="css/master-blue.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    <script type="text/javascript">
-      function selectTheme() {
-        Swal.fire({
-          title: 'Select a Theme',
-          type: 'question',
-          showCancelButton: true,
-          confirmButtonColor: '#00e3c6',
-          cancelButtonColor: '#db0000',
-          confirmButtonText: 'Blue',
-          cancelButtonText: 'Red'
-        }).then((r) => {
-          if (r.value) {
-            document.getElementById('currentCSS').href = "css/master-blue.css";
-          } else {
-            document.getElementById('currentCSS').href = "css/master-red.css";
-          }
-        })
-      }
-    </script>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="js/sweetalert.js"></script>
+    <script src="js/theme.js"></script>
     <title>Jamie's Personal Site</title>
   </head>
   <body>
