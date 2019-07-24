@@ -14,7 +14,7 @@ function notifyLoad() {
   success.fire({
     title: "Welcome to the " + name,
     showConfirmButton: true,
-    timer: 9999999999,
+    timer: 99999999999999999,
     position: 'bottom-end'
-  })
+  });
 }
