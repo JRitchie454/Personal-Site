@@ -32,21 +32,16 @@ function selectTheme() {
       Light: "Light"
     }
   }).then((val) => {
-    var pages = [ "contact.html", "hobbies.html" ];
-    var pageName = $(location).attr('href').split("/").pop();
-    var cssPath = "css/master-".concat(val.toLowerCase(),".css");
-    if (pages.includes(pageName.valueOf())) { cssPath = "../".concat(cssPath); }
+    if (val !== null) {
+      var pages = [ "contact.html", "hobbies.html" ];
+      var pageName = $(location).attr('href').split("/").pop();
+      var cssPath = "css/master-".concat(val.toLowerCase(),".css");
+      if (pages.includes(pageName.valueOf())) { cssPath = "../".concat(cssPath); }
 
-    switch (val) {
-      case "Ice":
-      case "Fire":
-      case "Dark":
-      case "Light":
-        $('#currentCSS').attr('href', cssPath);
-        success.fire({ title: val + " Theme Selected!" });
-        break;
-      default:
-        error.fire({ title: "Theme not switched" });
+      $('#currentCSS').attr('href', cssPath);
+      success.fire({ title: val + " Theme Selected!" });
+    } else {
+      error.fire({ title: "Theme not switched" });
     }
   });
 }
