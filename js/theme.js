@@ -5,6 +5,10 @@
  * Sweetalert 2 does not allow us to add extra selection buttons to the popup modal without a lot of HTML code.
  */
 
+/*
+ * Standard Success notification toast (sweetalert2), shown for 1.5 seconds in the top right corner of the page.
+ * This will likely be moved to a globals file as the site grows and the toast is needed for oher functions.
+ */
 const success = Swal.mixin({
     type: 'success',
     position: 'top-end',
@@ -13,6 +17,10 @@ const success = Swal.mixin({
     toast: true
 });
 
+/*
+ * Standard Error notification toast (sweetalert2), shown for 1.5 seconds in the top right corner of the page.
+ * This will likely be moved to a globals file as the site grows and the toast is needed for oher functions.
+ */
 const error = Swal.mixin({
   type: 'error',
   position: 'top-end',
@@ -21,6 +29,11 @@ const error = Swal.mixin({
   toast: true
 });
 
+/*
+ * This function starts by showing a modal (sweetalert) containing 4 buttons, one for each theme (subject to change).
+ * If the user clicks one of the 4 buttons, the theme corresponding to that button is switched to and a success toast (sweetalert2) is shown.
+ * If the user clicks outside of the modal, the theme selection is cancelled and an error toast (sweetalert2) is shown.
+ */
 function selectTheme() {
   swal({
     title: 'Select a Theme',
