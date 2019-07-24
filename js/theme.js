@@ -34,7 +34,7 @@ function selectTheme() {
   }).then((val) => {
     var pageName = location.pathname.split("/").pop();
     var prefix = "../";
-    if (pageName !== "contact.html" || pageName !== "hobbies.html") {
+    if (pageName !== "pages/contact.html" || pageName !== "pages/hobbies.html") {
       prefix = "";
     }
     switch (val) {
