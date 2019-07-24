@@ -33,9 +33,10 @@ function selectTheme() {
     }
   }).then((val) => {
     var pageName = location.pathname.split("/").pop();
-    var prefix = "../";
-    if (pageName !== "pages/contact.html" || pageName !== "pages/hobbies.html") {
-      prefix = "";
+    alert(pageName.valueOf());
+    var prefix = "";
+    if (pageName.valueOf() == "contact.html" || pageName.valueOf() == "hobbies.html") {
+      prefix = "../";
     }
     switch (val) {
       case "Ice":
