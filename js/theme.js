@@ -32,27 +32,18 @@ function selectTheme() {
       Light: "Light"
     }
   }).then((val) => {
-    var pageName = location.pathname.split("/").pop();
-    var prefix = "";
-    if (pageName.valueOf() == "contact.html" || pageName.valueOf() == "hobbies.html") {
-      prefix = "../";
-    }
+    var pages = [ "contact.html", "hobbies.html" ];
+    var pageName = $(location).attr('href').split("/").pop();
+    var cssPath = "css/master-".concat(val.toLowerCase(),".css");
+    if (pages.includes(pageName.valueOf())) { cssPath = "../".concat(cssPath); }
+
     switch (val) {
       case "Ice":
-        document.getElementById('currentCSS').href = prefix + "css/master-ice.css";
-        success.fire({ title: "Ice Theme Selected!" });
-        break;
       case "Fire":
-        document.getElementById('currentCSS').href = prefix + "css/master-fire.css";
-        success.fire({ title: "Fire Theme Selected!" });
-        break;
       case "Dark":
-        document.getElementById('currentCSS').href = prefix + "css/master-dark.css";
-        success.fire({ title: "Dark Theme Selected!" });
-        break;
       case "Light":
-        document.getElementById('currentCSS').href = prefix + "css/master-light.css";
-        success.fire({ title: "Light Theme Selected!" });
+        $('#currentCSS').attr('href', cssPath);
+        success.fire({ title: val + " Theme Selected!" });
         break;
       default:
         error.fire({ title: "Theme not switched" });
