@@ -34,7 +34,7 @@ function selectTheme() {
   }).then((val) => {
     var pageName = location.pathname.split("/").pop();
     var prefix = "";
-    if (pageName !== "index.html") {
+    if (pageName !== "index.html" || pageName !== "") {
       prefix = "../";
     }
     switch (val) {
