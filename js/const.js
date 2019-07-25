@@ -23,6 +23,14 @@ const error = Swal.mixin({
   toast: true
 });
 
+/*
+ * Constant array of all pages in the "pages" directory, mainly used for handling paths in css switching.
+ */
+const pages = [ "contact.html", "hobbies.html" ];
+
+/*
+ * Function to get the name of the current page
+ */
 function getPageName() {
   return $(location).attr('href').split("/").pop();
 }
@@ -30,5 +38,6 @@ function getPageName() {
 window.exports = {
   success,
   error,
+  pages,
   getPageName
 };

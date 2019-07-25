@@ -15,7 +15,6 @@ function selectTheme() {
     }
   }).then((val) => {
     if (val !== null) {
-      var pages = [ "contact.html", "hobbies.html" ];
       var cssPath = "css/master-".concat(val.toLowerCase(),".css");
       if (pages.includes(getPageName().valueOf())) { cssPath = "../".concat(cssPath); }
 
