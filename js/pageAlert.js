@@ -12,7 +12,7 @@ function notifyLoad() {
       break;
   }
   success.fire({
-    title: "Welcome to the".concat(name),
+    title: "Welcome to the ".concat(name),
     showConfirmButton: true,
     timer: 99999999999999999,
     position: 'bottom-end'
