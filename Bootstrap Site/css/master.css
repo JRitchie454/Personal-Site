@@ -1,1 +1,133 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i|Ubuntu:400,400i,700,700i&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  color: #8F8F8F;
+}
+
+#title {
+  background-color: #FF4C68;
+  color: #FFFFFF;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/* Navbar */
+.inner-nav {
+  padding: 0 0 4.5rem;
+}
+
+.inner-nav-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.inner-nav-item {
+  padding: 0 18px;
+}
+
+.inner-nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Download buttons */
+.dl-btn {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.title-img {
+  -ms-transform:      rotate(25deg);
+  -moz-transform:     rotate(25deg);
+  -webkit-transform:  rotate(25deg);
+  -o-transform:       rotate(25deg);
+  transform:          rotate(25deg);
+  width: 60%;
+}
+
+/* Features */
+#features {
+  padding: 7% 15%;
+}
+
+.feature-box {
+  padding: 5%;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #EF8172;
+  margin-bottom: 1rem;
+}
+
+.feature-icon:hover {
+  color: #FF4C68;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #EF8172;
+  color: #FFFFFF;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.testimonial-image {
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Press */
+#press {
+  background-color: #EF8172;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.press-img {
+  margin: 20px 20px 50px;
+  width: 15%;
+}
+
+/* Pricing */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
