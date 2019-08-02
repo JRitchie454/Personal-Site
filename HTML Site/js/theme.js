@@ -15,6 +15,7 @@ function selectTheme() {
     }
   }).then((val) => {
     if (val !== null) {
+      alert(getPageName());
       var cssPath = "css/master-".concat(val.toLowerCase(),".css");
       if (pages.includes(getPageName().valueOf())) { cssPath = "../".concat(cssPath); }
 
