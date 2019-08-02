@@ -2,12 +2,49 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Home</title>
   </head>
   <body>
-    <h1>Home</h1>
-    <h2><a href="Bootstrap Site/index.html">Bootstrap Site</a></h2>
-    <h2><a href="CSS Styled Site/index.html">CSS Styled Site</a></h2>
-    <h2><a href="HTML Site/index.html">HTML Site</a></h2>
+    <div class="jumbotron">
+      <h1 class="display-4">Home</h1>
+      <p class="lead">Welcome to my small collection of websites that I am creating while following <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">The Complete Web Development Bootcamp</a> course available on <a href="https://www.udemy.com/">Udemy</a>.</p>
+    </div>
+
+    <div class="card-group col-12">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Bootstrap-Site.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bootstrap Site</h5>
+          <p class="card-text">A website made using the Bootstrap library (Currently In Development)</p>
+          <div class="col text-center">
+            <a href="Bootstrap Site/index.html" class="btn btn-primary">Bootstrap Site</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/CSS-Site.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CSS Site</h5>
+          <p class="card-text">A website with heavy amounts of CSS Styling.</p>
+          <div class="col text-center">
+            <a href="CSS Styled Site/index.html" class="btn btn-primary">CSS Styled Site</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/HTML-Site.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">HTML Site</h5>
+          <p class="card-text">A website originally intended to be majority HTML; however it includes heavy CSS and Javascript.</p>
+          <div class="col text-center">
+            <a href="HTML Site/index.html" class="btn btn-primary">HTML Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
