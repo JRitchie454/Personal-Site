@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Home</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="padding-bottom: 0px;">
+    <nav class="outer-nav navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">Navigation</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,13 +25,13 @@
       </div>
     </nav>
 
-    <div class="jumbotron">
+    <div class="intro-section jumbotron">
       <h1 class="display-4">Home</h1>
       <p class="lead">Welcome to my small collection of websites that I am creating while following <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">The Complete Web Development Bootcamp</a> course available on <a href="https://www.udemy.com/">Udemy</a>.</p>
     </div>
 
-    <div class="card-group col-12">
-      <div class="card" style="width: 18rem;">
+    <div class="row sites justify-content-center">
+      <div class="card col-lg-3">
         <img src="img/Bootstrap-Site.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Bootstrap Site</h5>
@@ -40,7 +41,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card col-lg-3">
         <img src="img/CSS-Site.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CSS Site</h5>
@@ -50,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
+      <div class="card col-lg-3">
         <img src="img/HTML-Site.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">HTML Site</h5>
