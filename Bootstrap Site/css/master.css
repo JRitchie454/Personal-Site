@@ -31,10 +31,11 @@ p {
 #title {
   background-color: #FF4C68;
   color: #FFFFFF;
+  margin-top: 45px;
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 10%;
 }
 
 /* Navbar */
@@ -65,17 +66,21 @@ p {
 
 /* Title Image */
 .title-img {
+  position: absolute;
   -ms-transform:      rotate(25deg);
   -moz-transform:     rotate(25deg);
   -webkit-transform:  rotate(25deg);
   -o-transform:       rotate(25deg);
   transform:          rotate(25deg);
   width: 60%;
+  right: 30%;
 }
 
 /* Features */
 #features {
+  background-color: #FFFFFF;
   padding: 7% 15%;
+  position: relative;
 }
 
 .feature-box {
