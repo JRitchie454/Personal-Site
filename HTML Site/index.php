@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8">
     <?php include($_SERVER['DOCUMENT_ROOT'].'/libs.php') ?>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/sweetalert2.js"></script>
-    <script type="text/javascript" src="js/sweetalert.js"></script>
     <script type="text/javascript" src="js/const.js"></script>
     <script type="text/javascript" src="js/theme.js"></script>
     <script type="text/javascript" src="js/pageAlert.js"></script>
@@ -14,7 +11,7 @@
     <link rel="icon" href="images/favicon.ico">
     <title>Jamie's Personal Site</title>
   </head>
-  <body>
+  <body onload="notifyLoad()">
     <?php include($_SERVER['DOCUMENT_ROOT'].'/nav.php') ?>
     <div class="wrapper" onload="notifyLoad()">
       <table>

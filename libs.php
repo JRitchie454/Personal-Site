@@ -3,6 +3,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Popper -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
 <script src="https://kit.fontawesome.com/b8a159aa7e.js"></script> <!-- Font Awesome -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> <!-- Sweetalert2 -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Sweetalert -->
 
 <!-- OverlayScrollbars -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.css">

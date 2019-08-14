@@ -5,6 +5,7 @@
   <?php include($_SERVER['DOCUMENT_ROOT'].'/libs.php') ?>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i,900,900i|Ubuntu:400,400i,700,700i&display=swap"> <!-- Fonts -->
   <link rel="stylesheet" href="css/master.css">
+  <link rel="icon" href="images/favicon.ico">
   <title>Tindog</title>
 </head>
   <body>
