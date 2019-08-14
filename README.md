@@ -8,3 +8,6 @@ ___
 - [Sweetalert2](https://sweetalert2.github.io/)
 - [jQuery](https://jquery.com/)
 - [Font Awesome](https://fontawesome.com/)
+- [Bootstrap] (https://getbootstrap.com/)
+- [Popper] (https://popper.js.org/)
+- [OverlayScrollbars] (https://kingsora.github.io/OverlayScrollbars/)
