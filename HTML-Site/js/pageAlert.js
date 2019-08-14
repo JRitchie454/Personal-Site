@@ -1,13 +1,14 @@
 function notifyLoad() {
   var name = "";
   switch (getPageName().valueOf()) {
-    case "index.php":
+    case "":
+    case "index.html":
       name = "Homepage";
       break;
-    case "hobbies.php":
+    case "hobbies.html":
       name = "Hobbies Page";
       break;
-    case "contact.php":
+    case "contact.html":
       name = "Contact Me Page";
       break;
   }
