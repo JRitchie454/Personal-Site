@@ -26,7 +26,7 @@ const error = Swal.mixin({
 /*
  * Constant array of all pages in the "pages" directory, mainly used for handling paths in css switching.
  */
-const pages = [ "contact.html", "hobbies.html" ];
+const pages = [ "contact.php", "hobbies.php" ];
 
 /*
  * Function to get the name of the current page

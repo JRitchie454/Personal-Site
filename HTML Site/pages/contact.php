@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/libs.php') ?>
     <script src="../js/jquery.js"></script>
     <script src="../js/sweetalert2.js"></script>
     <script src="../js/sweetalert.js"></script>
@@ -15,10 +15,11 @@
     <title>Contact Me</title>
   </head>
   <body onload="notifyLoad()">
+    <?php include($_SERVER['DOCUMENT_ROOT'].'/nav.php') ?>
     <nav>
       <ul class="nav-bar">
-        <li class="nav-button"><a href="../index.html"><i class="fas fa-home"></i> Homepage</a></li>
-        <li class="nav-button"><a href="./hobbies.html"><i class="fas fa-gamepad"></i> My Hobbies</a></li>
+        <li class="nav-button"><a href="../index.php"><i class="fas fa-home"></i> Homepage</a></li>
+        <li class="nav-button"><a href="./hobbies.php"><i class="fas fa-gamepad"></i> My Hobbies</a></li>
         <li class="nav-button"><a href="#"><i class="fas fa-comments"></i> Contact Me</a></li>
         <button class="theme-button" onclick="selectTheme()"><i class="fas fa-paint-brush"></i> Theme</button>
       </ul>

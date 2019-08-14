@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Sacramento|Ubuntu&display=swap');
 
-body {
+.wrapper {
   font-family: 'Merriweather Sans', sans-serif;
   line-height: 2;
   margin: 0;
