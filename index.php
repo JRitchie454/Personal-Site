@@ -28,7 +28,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Bootstrap Site</h5>
               <p class="card-text">A website made using the Bootstrap library</p>
-              <a href="Bootstrap Site/index.php" class="btn btn-outline-primary mt-auto">Bootstrap Site</a>
+              <a href="Bootstrap-Site/index.php" class="btn btn-outline-primary mt-auto">Bootstrap Site</a>
             </div>
           </div>
           <div class="card col-lg-3">
@@ -36,7 +36,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">CSS Styled Site</h5>
               <p class="card-text">A website with heavy amounts of CSS Styling. Designed with a clean, minimal layout in mind.</p>
-              <a href="CSS Styled Site/index.php" class="btn btn-outline-primary mt-auto">CSS Styled Site</a>
+              <a href="CSS-Styled-Site/index.php" class="btn btn-outline-primary mt-auto">CSS Styled Site</a>
             </div>
           </div>
           <div class="card col-lg-3">
@@ -44,7 +44,7 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">HTML Site</h5>
               <p class="card-text">A website originally intended to be majority HTML; however it now includes heavy CSS and Javascript.</p>
-              <a href="HTML Site/index.php" class="btn btn-outline-primary mt-auto">HTML Site</a>
+              <a href="HTML-Site/index.php" class="btn btn-outline-primary mt-auto">HTML Site</a>
             </div>
           </div>
         </div>
@@ -60,9 +60,9 @@
           <div class="card col-lg-3">
             <img src="" alt="IN DEVELOPMENT">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Discord Oauth2</h5>
-              <p class="card-text">A simple website demonstrating logging in and retrieving information using Discord Oauth2 and PHP.</p>
-              <a href="#" class="btn btn-outline-success">Discord Oauth2</a>
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-outline-success"></a>
             </div>
           </div>
         </div>
