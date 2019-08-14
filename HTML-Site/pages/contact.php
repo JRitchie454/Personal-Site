@@ -19,8 +19,8 @@
     <div class="wrapper">
       <nav>
         <ul class="nav-bar">
-          <li class="nav-button"><a href="../index.php"><i class="fas fa-home"></i> Homepage</a></li>
-          <li class="nav-button"><a href="./hobbies.php"><i class="fas fa-gamepad"></i> My Hobbies</a></li>
+          <li class="nav-button"><a href="../index.html"><i class="fas fa-home"></i> Homepage</a></li>
+          <li class="nav-button"><a href="./hobbies.html"><i class="fas fa-gamepad"></i> My Hobbies</a></li>
           <li class="nav-button"><a href="#"><i class="fas fa-comments"></i> Contact Me</a></li>
           <button class="theme-button" onclick="selectTheme()"><i class="fas fa-paint-brush"></i> Theme</button>
         </ul>
