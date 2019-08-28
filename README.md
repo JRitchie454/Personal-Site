@@ -11,3 +11,4 @@ ___
 - [Bootstrap](https://getbootstrap.com/)
 - [Popper](https://popper.js.org/)
 - [OverlayScrollbars](https://kingsora.github.io/OverlayScrollbars/)
+- [Hover.css](https://ianlunn.github.io/Hover/)
