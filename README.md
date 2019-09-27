@@ -12,3 +12,5 @@ ___
 - [Popper](https://popper.js.org/)
 - [OverlayScrollbars](https://kingsora.github.io/OverlayScrollbars/)
 - [Hover.css](https://ianlunn.github.io/Hover/)
+___
+## View the [Live Version](https://jritchie454.github.io/Personal-Site/)
